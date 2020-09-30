@@ -1,6 +1,10 @@
 
 exports.min = function min (array) {
-  return 0;
+    let minNumberInArray = Math.min.apply(null, array);
+    if (minNumberInArray == Infinity) {
+        minNumberInArray = 0;
+    }
+    return minNumberInArray
 }
 
 exports.max = function max (array) {
